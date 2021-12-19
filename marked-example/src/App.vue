@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Learning about Markdown inside Vue"/>
-    {{ markdown }}
+  <textarea v-model="markdown" cols="40" rows="15"></textarea>
     <div v-html="markdown2Html"></div>
   </div>
 </template>
@@ -10,7 +9,6 @@
 // import HelloWorld from './components/HelloWorld.vue'
 
 import { marked } from 'marked';
-
 
 export default {
   name: 'App',
